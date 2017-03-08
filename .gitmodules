@@ -1,0 +1,3 @@
+[submodule "rbm-minst"]
+	path = rbm-minst
+	url = https://github.com/jdeng/rbm-mnist
