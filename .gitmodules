@@ -1,3 +1,6 @@
 [submodule "rbm-minst"]
 	path = rbm-minst
 	url = https://github.com/jdeng/rbm-mnist
+[submodule "deep-learning-from-scratch"]
+	path = deep-learning-from-scratch
+	url = https://github.com/oreilly-japan/deep-learning-from-scratch
