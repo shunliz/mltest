@@ -140,5 +140,6 @@ def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
 
+training_data, validation_data, test_data = mnist_loader.load_data()
 net = network.Network([784, 30, 10])
 net.SGD(training_data, 30, 10, 100.0, test_data=test_data)
