@@ -72,6 +72,7 @@ class Network(object):
         gradient descent using backpropagation to a single mini batch.
         The ``mini_batch`` is a list of tuples ``(x, y)``, and ``eta``
         is the learning rate."""
+        import pdb;pdb.set_trace()
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
         for x, y in mini_batch:
@@ -141,7 +142,7 @@ def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
 
-
+import pdb;pdb.set_trace()
 training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 net = Network([784, 30, 10])
 net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
