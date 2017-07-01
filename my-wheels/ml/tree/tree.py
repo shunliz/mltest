@@ -74,8 +74,9 @@ def majorityCnt(classList):
   
  #创建树的函数代码  
 def createTree(dataSet,labels):       
-    classList = [example[-1]  for example in dataSet]  
-    if classList.count(classList[0])==len(classList):#类别完全相同则停止划分  
+    classList = [example[-1]  for example in dataSet]
+    if classList.count(classList[0])==len(classList):	
+    #if set(classList)==set([classList[0]]):#类别完全相同则停止划分  
         return classList[0]  
     if len(dataSet[0]) ==1:             #遍历完所有特征值时返回出现次数最多的  
         return majorityCnt(classList)  
@@ -92,6 +93,5 @@ def createTree(dataSet,labels):
     return myTree    
   
 if __name__=="__main__":  
-    import pdb;pdb.set_trace()
     dataSet,labels = createDataSet()  
     print createTree(dataSet,labels) 
