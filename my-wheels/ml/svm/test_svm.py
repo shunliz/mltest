@@ -7,7 +7,7 @@ import SVM
 print "step 1: load data..."  
 dataSet = []  
 labels = []  
-fileIn = open('E:/Python/Machine Learning in Action/testSet.txt')  
+fileIn = open('testSet.txt')  
 for line in fileIn.readlines():  
     lineArr = line.strip().split('\t')  
     dataSet.append([float(lineArr[0]), float(lineArr[1])])  
