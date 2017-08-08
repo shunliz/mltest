@@ -1,5 +1,4 @@
-
- from numpy import *  
+from numpy import *  
 import SVM  
   
 ################## test svm #####################  
