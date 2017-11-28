@@ -1,5 +1,5 @@
 from numpy import *  
-import SVM  
+import svm  
   
 ################## test svm #####################  
 ## step 1: load data  
