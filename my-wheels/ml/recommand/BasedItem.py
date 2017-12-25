@@ -33,14 +33,14 @@ class ItemBasedCF:
                     if i == j : continue
                     C[i].setdefault(j,0)
                     C[i][j] += 1
-        import pdb;pdb.set_trace()
+
         #计算相似度矩阵
         self.W = dict()
         for i,related_items in C.items():
             self.W.setdefault(i,{})
             for j,cij in related_items.items():
                 self.W[i][j] = cij / (math.sqrt(N[i] * N[j]))
-        import pdb;pdb.set_trace()
+
         return self.W
 
     #给用户user推荐，前K个相关用户
