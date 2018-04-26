@@ -32,6 +32,7 @@ def classify0(inX,dataSet,labels,k):
     #返回距离最小的点对应的标签
    return sortedClassCount[0][0]
 
+
 '''
 import kNN  
 from numpy import *   
